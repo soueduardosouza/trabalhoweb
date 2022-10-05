@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0%;
+    overflow-x: hidden;
+    }
+
+      /*ESTILIZAÇÃO PADRÃO DO SITE*/
+
+
+     .site{
+      float: left;
+      background-color: gray;
+      width: 100%;
+      height: 100%;
+      
+     }
+
+     /*BLOCO PAGINA INICIAL*/
+
+     .pagina_inicial{
+      float: left;
+    }
+
+    /*BLOCO CAIXA DE IMAGENS*/
+
+    .caixa{
+      display: flex;
+      width: 50%;
+      height: 60%;
+      border: #252525 5px solid;
+      border-radius: 15px;
+      position: absolute;
+      margin-left: 1%;
+      margin-top: 6%;
+
+    }
+    .caixa input{
+      display: none;
+    }
+    .slides{
+      position: absolute;
+      display: flex;
+      width: 800%;
+      height: 100%;
+     }
+
+    .slides{
+      width: 1000%;
+    }
+    
+    
+  .botao-auto{
+    float: left;
+    position: absolute;
+    width: 100%;
+    margin-top: 32%;
+    display: flex;
+    margin-left: 15%;
+  }
+  .botao-aut{
+    float: left;
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;  
+    transition: .3s;
+  }
+  
+  .botao-aut:not(:last-child){
+      margin-right: 20px;
+  }
+  .botao-aut:hover{
+      background-color: #f18a29;
+  }
+  
+  #botao1:checked ~ .slides{
+      margin-left: 0;
+  }
+  #botao2:checked ~ .slides{
+      margin-left: -105%;
+  }
+  #botao3:checked ~ .slides{
+      margin-left: -210%;
+  }
+  #botao4:checked ~ .slides{
+      margin-left: -315%;
+  }
+  #botao5:checked ~ .slides{
+      margin-left: -420%;
+  }
+  #botao6:checked ~ .slides{
+      margin-left: -525%;
+  }
+  #botao7:checked ~ .slides{
+      margin-left: -630%;
+  }
+  #botao8:checked ~ .slides{
+      margin-left: -735%;
+  }
+
+
+    /*BLOCO MENU*/
+
+    .menu{
+      background-color: #252525;
+      text-align: right;
+      width: 99%;
+      position: fixed;
+      margin-right: 1%;
+      font-size: 150%;
+      font-family: 'Courier New', Courier, monospace;
+      border: #f18a29 2px solid;
+      border-radius: 15px;
+      margin-left: 0.5%;
+    }
+
+    .menu a{
+      margin-right: 2%;
+      text-decoration: none;
+      color: #fff;
+    }
+  
+    .menu :hover{
+      color: #f18a29;
+    }
+
+    .logo{
+    float: left;
+    width: 5%;
+    height: 20%;
+    }
+    .logo img{
+      width: 80%;
+      height: 100%;
+    }
+
+    /*BLOCO TEXTOS DA PAGINA INICIAL*/
+
+    .texto1{
+      float: left;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #f18a29;
+      border: #252525 5px solid;
+      border-radius: 15px;
+      position: absolute;
+      margin-left: 53%;
+      margin-top: 6%;
+      width: 20%;
+      height: 60%;
+    }
+    .texto1 h1{
+      position: absolute;
+      margin-left: 3%;
+      color: #fff;
+      font-size: 180%;
+    }
+    .texto1 p{
+      margin-top: 20%;
+      text-align: left;
+      margin-left: 3%;
+      color: #fff;
+      font-size: 120%;
+    }
+    .texto2{
+      background-color: #f18a29;
+      float: left;
+      font-family: 'Courier New', Courier, monospace;
+      border: #252525 5px solid;
+      border-radius: 15px;
+      position: absolute;
+      margin-left: 75%;
+      margin-top: 6%;
+      width: 20%;
+      height: 60%;
+    }
+    .texto2 h1{
+      text-align: left;
+      position: absolute;
+      margin-left: 3%;
+      color: #fff;
+      font-size: 160%;
+    }
+    .texto2 p{
+      margin-top: 25%;
+      text-align: left;
+      margin-left: 3%;
+      color: #fff;
+      font-size: 120%;
+    }
+
+    /*BLOCO NOSSOS ANIMAIS*/
+   
+    .nossos_animais{
+      float: left;
+      margin-top: 40%;
+    }
+    .nossos_animais h1{
+      background-color: #f18a29;
+      font-size: 500%;
+      color: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      margin: 2%;
+    }
+    
+    .fotos input{
+      display: none
+    }
+
+    .botao_filtro{
+    
+      float: left;
+      position: absolute;
+      width: 100%;
+      margin-top: -8.5%;
+      display: flex;
+      margin-left: 34%;
+    }
+
+    .filtro:hover{
+      background-color: #f18a29
+    }
+    .filtro{
+    color: #f18a29;
+    background-color: #fff;
+    float: left;
+    border: 3px solid #f18a29;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;  
+    transition: .3s;
+    margin: 2%
+    }
+    
+    
+    #dogs:checked ~ .gato{
+      display: none
+    }
+    #cats:checked ~ .dog{
+      display: none
+    }
+
+    /*LINK PISCANDO DE COMO AJUDAR*/
+
+    .ajudar a{
+      text-decoration: none;
+      color: #f18a29;
+    }
+    .ajudar{
+      font-size: 140%;
+      width: 20%;
+      height: 5%;
+      margin-top: 12%;
+      margin-left: 42%;
+      position: absolute;
+      animation: animate 1.5s linear infinite;
+    }
+    @keyframes animate{
+      0%{
+        opacity: 0;
+      }
+      50%{
+        opacity: 0.7;
+      }
+      100%{
+        opacity: 0;
+      }
+    }
+
+
+    /*BLOCO FOTOS*/
+
+     .fotos{
+     float: left;
+     width: 99%;
+     height: 100%;
+     margin-left: 2%;
+     margin-top: 5%;
+     
+     
+    }
+    .fotos img{
+     border: #fff 1px solid;
+     width: 24%;
+     height: 100%;
+     overflow: hidden;
+    }
+
+    /*BLOCO COMO AJUDAR*/
+
+    .como_ajudar{
+      float: left;
+      width: 100%;
+      height: 100%;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      border: #f18a29 2px solid;
+      border-radius: 3%;
+      margin-top: 5%;
+      margin-left: 1%;
+      width: 98%;
+      
+    }
+    .como_ajudar h1{
+      margin-top: 2%;
+      font-size: 500%;
+      color: #fff;
+    }
+    .como_ajudar h2{
+      background-color: #f18a29;
+      margin: 2% ;
+      color: #252525;
+    }
+    .como_ajudar p{
+      color: #fff;
+    }
+
+    /*BLOCO COMO ADOTAR*/
+    .como_adotar{
+      float: left;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      margin-top: 2%;
+      margin-left: 1%;
+      width: 98%;
+    }
+    .como_adotar h1{
+      margin: 2%;
+      color: #fff;
+      font-size: 500%;
+    }
+    .como_adotar p{
+      color: #414141;
+      font-size: 130%;
+      background-color: #fff;
+      border: #fff 2px solid;
+      border-radius: 30px;
+    }
+
+   /*BLOCO FORMULARIO*/ 
+
+   .formulario {
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: 5%;
+    
+}
+
+.interesse {
+    width: 50%;
+    float: left;
+    align-items: center;
+    background-color: gray;
+    border: #f18a29 3px solid;
+    border-radius: 50px;
+    text-align: center;
+    
+}
+
+.titulo_form{
+  color: #fff;
+  background-color: #f18a29;
+}
+
+.botao_form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+.botao_form input {
+    margin: 2%;
+    padding: 2%;
+    border: none;
+    border-radius: 20px;
+}
+
+.botao_form input:hover {
+    background-color: #f18a29;
+}
+
+.botoes_genero{
+  text-align: left;
+  color: #fff;
+  margin: 2%;
+}
+
+.botoes_genero input{
+    display: none;
+}
+
+.botao_gen {
+  color:#fff;
+  float: left;
+  border: 3px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;  
+  transition: .05s;
+  margin-left: 15%;
+}
+.botao_gen:hover {
+  color: #252525;
+  background-color: #fff;
+}
+
+
+.continue button {
+    width: 100%;
+    margin-top: 2%;
+    border: none;
+    background-color: #f18a29;
+    padding: 3%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue button:hover{
+    background-color: #f18a29;
+}
+
+.continue button a {
+    text-decoration: none;
+    font-size: 150%;
+    color: #fff;
+}
